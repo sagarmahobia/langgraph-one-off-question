@@ -6,6 +6,10 @@ This project implements a flexible question answering pipeline using LangGraph. 
 
 This project is a demonstration of "Vibe Coding" and showcases how AI tools can be effectively integrated into a developer's day-to-day workflow for planning, designing, and documenting software.
 
+## Web Interface
+
+The project now includes a Streamlit web interface for a more user-friendly experience. See the [Web Interface](#web-interface) section for details on how to run it.
+
 ## Features
 
 *   **Multi-source Input:** Answer questions based on content from web pages, PDFs, text files, or direct text strings.
@@ -102,6 +106,22 @@ python src/main.py --text "Your text here..." --question "What is this about?" -
 # Limit final answer length to 3 sentences
 python src/main.py --url "https://example.com/article" --question "What are the key points?" --max-answer_length 3
 ```
+
+## Web Interface
+
+The project includes a Streamlit web interface for a more user-friendly experience:
+
+1. Make sure you have set up your environment variables in the `.env` file
+2. Install Streamlit if not already installed:
+   ```bash
+   uv pip install streamlit
+   ```
+3. Run the Streamlit app:
+   ```bash
+   streamlit run src/streamlit_app.py
+   ```
+
+The web interface provides the same functionality as the command-line version but with a graphical user interface that makes it easier to use.
 
 ## Sample Files
 
